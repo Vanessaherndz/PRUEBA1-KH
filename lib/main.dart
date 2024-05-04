@@ -9,7 +9,7 @@ class ColorChangeWidget extends StatefulWidget {
 }
 
 class _ColorChangeWidgetState extends State<ColorChangeWidget> {
-  Color _currentColor = Colors.red;
+  Color _currentColor = Colors.green;
 
   void _toggleColor() {
     setState(() {
@@ -27,7 +27,7 @@ class _ColorChangeWidgetState extends State<ColorChangeWidget> {
         color: _currentColor,
         child: const Center(
           child: Text(
-            'Presionar',
+            'Presionar Para Cambiar de color',
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
@@ -43,7 +43,7 @@ void main() {
   runApp(MaterialApp(
     home: Scaffold(
       appBar: AppBar(
-        title: const Text('Diferente color'),
+        title: const Text('Prueba 1 Diferente color'),
       ),
       body: const Center(
         child: ColorChangeWidget(),
