@@ -23,13 +23,13 @@ class _ColorChangeWidgetState extends State<ColorChangeWidget> {
       onTap: _toggleColor,
       child: Container(
         width: 150,
-        height: 90,
+        height: 100,
         color: _currentColor,
         child: const Center(
-          child: Text(
-            'Presionar Para Cambiar de color',
+          child: Text(  //cuadro de texto para cambiar  el color
+            'Presionar Cambiar Color',
             style: TextStyle(
-              color: Colors.white,
+              color: Colors.white,// Color de laa letras en cuadro
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -46,7 +46,7 @@ void main() {
         title: const Text('Prueba 1 Diferente color'),
       ),
       body: const Center(
-        child: ColorChangeWidget(),
+        child: ColorChangeWidget(),//llamamos al widget
       ),
     ),
   ));
